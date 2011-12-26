@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LoginExample</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
+<%= yield %>
+
+</body>
+</html>
